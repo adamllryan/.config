@@ -1,0 +1,12 @@
+xbuild/
+.DS_Store
+github-copilot/
+configstore/
+stetic/
+Webull Desktop/
+.mono/
+linearmouse/
+Microsoft\VisualStudio Services/
+LocationServiceData.config
+Microsoft\VisualStudio Services/
+jgit/config

@@ -2,11 +2,11 @@ return {
   -- buffer remove
   {
     "echasnovski/mini.bufremove",
-		-- stylua: ignore
-		keys = {
-			{ "<leader>bk", function() require("mini.bufremove").delete(0, false) end, desc = "Delete Buffer" },
-			{ "<leader>bD", function() require("mini.bufremove").delete(0, true) end,  desc = "Delete Buffer (Force)" },
-		},
+    -- stylua: ignore
+    keys = {
+      { "<leader>bk", function() require("mini.bufremove").delete(0, false) end, desc = "Delete Buffer" },
+      { "<leader>bD", function() require("mini.bufremove").delete(0, true) end,  desc = "Delete Buffer (Force)" },
+    },
   },
   {
     "echasnovski/mini.bracketed",
@@ -37,4 +37,5 @@ return {
       require("mini.splitjoin").setup()
     end,
   },
+  { 'echasnovski/mini.indentscope', version = '*', symbol = "|", },
 }

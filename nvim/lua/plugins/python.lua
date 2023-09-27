@@ -1,8 +1,6 @@
-if true then return end
+-- if true then return {} end
 return {
-  { 'numirias/semshi', },
-  -- { 'deoplete-plugins/deoplete-jedi' },
-  -- {  },
-
-
+	{ "numirias/semshi" },
+	-- { 'deoplete-plugins/deoplete-jedi' },
+	-- {  },
 }

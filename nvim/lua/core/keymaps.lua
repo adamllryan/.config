@@ -68,7 +68,14 @@ map("n", "<leader>ut", function()
 	end
 end, "Toggle between light and dark themes")
 -- Copilot mappings
-map("i", "<Tab>", function() require("copilot.suggestion").accept_word() end, "Accept copilot suggestion (word)")
+map("i", '<Tab>', function()
+	if require("copilot.suggestion").is_visible() then
+		require("copilot.suggestion").accept()
+	else
+		vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, false, true), "n", false)
+	end
+end
+, "Accept copilot suggestion (word)")
 
 -- Clear after search
 map("n", "<leader>ur", "<cmd>nohl<cr>", "Clear highlights")

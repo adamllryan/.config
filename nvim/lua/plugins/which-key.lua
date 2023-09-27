@@ -1,6 +1,15 @@
 return {
   "folke/which-key.nvim",
-  opts = {},
+  init = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 0 
+  end,
+  opts = {
+    triggers_nowait = {
+      "<leader>",
+    }
+
+  },
   config = function()
     local wk = require("which-key")
     local keymaps = {

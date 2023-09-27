@@ -36,5 +36,6 @@
         "/Users/adam/.local/share/nvim/lazy/LuaSnip/lua",
         "/Users/adam/.config/nvim/lua",
         "${3rd}/luv/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }

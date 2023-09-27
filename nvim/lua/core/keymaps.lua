@@ -51,6 +51,14 @@ map("v", ">", ">gv")
 
 map("n", "<leader>p", ":Format<CR>", "Autoformat file")
 
+-- Trouble
+map("n", "<leader>xx", function() require("trouble").open() end, "Trouble Toggle")
+map("n", "<leader>xw", function() require("trouble").open("workspace_diagnostics") end, "Trouble Workspace Diagnostics")
+map("n", "<leader>xd", function() require("trouble").open("document_diagnostics") end, "Trouble Document Diagnostics")
+map("n", "<leader>xq", function() require("trouble").open("quickfix") end, "Trouble Quickfix")
+map("n", "<leader>xl", function() require("trouble").open("loclist") end, "Trouble Loc List")
+map("n", "gR", function() require("trouble").open("lsp_references") end, "Trouble LSP References")
+
 -- Switch between light and dark modes
 map("n", "<leader>ut", function()
 	if vim.o.background == "dark" then
@@ -59,6 +67,8 @@ map("n", "<leader>ut", function()
 		vim.o.background = "dark"
 	end
 end, "Toggle between light and dark themes")
+-- Copilot mappings
+map("i", "<Tab>", function() require("copilot.suggestion").accept_word() end, "Accept copilot suggestion (word)")
 
 -- Clear after search
 map("n", "<leader>ur", "<cmd>nohl<cr>", "Clear highlights")

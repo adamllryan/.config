@@ -13,7 +13,6 @@ local is_public_project = function()
 end
 
 return {
-
   -- custom config which piggybacks on the copilot extras in lazy.lua.
   {
     "zbirenbaum/copilot.lua",

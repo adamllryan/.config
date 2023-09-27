@@ -49,6 +49,8 @@ map("n", "<S-h>", ":bprevious<CR>")
 map("v", "<", "<gv")
 map("v", ">", ">gv")
 
+map("n", "<leader>p", ":Format<CR>", "Autoformat file")
+
 -- Switch between light and dark modes
 map("n", "<leader>ut", function()
 	if vim.o.background == "dark" then

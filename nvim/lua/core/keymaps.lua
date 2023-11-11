@@ -95,7 +95,7 @@ map("n", "<leader>h", ":edit term://zsh<CR>", {
 	silent = true,
 	desc = { "Open terminal in current buffer" },
 })
-map("n", "<leader>H", ":split<CR><C-j>:edit term://zsh<CR>", {
+map("n", "<leader>H", ":split<CR><C-w><C-j><C-w>15-:edit term://zsh<CR>i", {
 	silent = true,
 	desc = { "Open terminal in new buffer" },
 })

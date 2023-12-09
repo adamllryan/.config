@@ -99,3 +99,6 @@ map("n", "<leader>H", ":split<CR><C-w><C-j><C-w>15-:edit term://zsh<CR>i", {
 	silent = true,
 	desc = { "Open terminal in new buffer" },
 })
+
+map("n", "<C-s>", ":w<CR>", "Save file")
+map("i", "<C-s>", "<Esc>:w<CR>", "Save file")
